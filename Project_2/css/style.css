@@ -12,11 +12,12 @@ body{
 }
 :root {
     --main-color: #6a6a6a;
+    --icon-color:#0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
 .fa-solid {
-    color: var(--main-color);
+    color: var(--icon-color);
 }
 a {
     color: inherit;
@@ -61,7 +62,7 @@ nav {
 }
 .nav ul{
     cursor: pointer;
-    color: #0065FC;
+    color: var(--icon-color);
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -71,7 +72,7 @@ nav {
     display: inline;
 }
 .nav ul li :hover{
-    border-top: 3px solid #0065FC;
+    border-top: 3px solid var(--icon-color);
 }
 /****** *****************************info-group*********************** ***********/
 /***Global***/
@@ -93,7 +94,7 @@ nav {
     width: 50px;
     line-height: 50px;
     border-radius: 15px 0 0 15px;
-    background-color:#F2F2F2;    
+    background-color:var(--main-bg-color);    
 }
 .form .label i{
     font-size: 25px; 
@@ -107,7 +108,7 @@ textarea{
 .button{
     border: none;
     border-radius: 0 15px 15px 0;
-    background-color: #0065FC;
+    background-color: var(--icon-color);
     padding:  16px 15px  16px ;
     font-size: 18px;
     font-weight: 700;
@@ -154,7 +155,7 @@ textarea{
 .card{
     
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;;  
+    transition: 0.3s; 
 }
 /* .card :hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -185,7 +186,13 @@ textarea{
     padding: 5px 5px 30px ; 
     background-color: white;
     border-radius: 15px ;
+    cursor: pointer;
 }
+.hebergements .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.2s;
+}
+
 .hebergements img{
     width: 100%;
     height: 124px;
@@ -209,8 +216,9 @@ textarea{
     width: 85%;
     margin: 0 auto; 
 }
-.populaires-cards :hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+.populaires .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.2s;
 }
 .populaires .card{
     height: 144px;
@@ -243,6 +251,11 @@ textarea{
     width: 22%;
     height:700px;
     border-radius: 15px;
+    cursor: pointer;
+}
+.activities .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.2s;
 }
 .activities img{
     max-width: 100%;
